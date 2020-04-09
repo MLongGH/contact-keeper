@@ -47,7 +47,6 @@ const ContactState = props => {
       contact.id = uuidv4();
       dispatch({type: ADD_CONTACT, payload: contact});
     }
-
     //Delete Contact
     const deleteContact = id => {
       dispatch({type: DELETE_CONTACT, payload: id});
@@ -61,6 +60,9 @@ const ContactState = props => {
       dispatch({type: CLEAR_CURRENT});
     }
     //Update contact
+    const updateContact = contact => {
+      dispatch({type: UPDATE_CONTACT, payload: contact});
+    }
 
     //Filter contacts
 
@@ -74,7 +76,8 @@ const ContactState = props => {
           addContact,
           deleteContact,
           setCurrent,
-          clearCurrent
+          clearCurrent,
+          updateContact
         }}
       >
         {props.children}
