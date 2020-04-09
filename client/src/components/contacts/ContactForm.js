@@ -18,7 +18,6 @@ const ContactForm = () => {
   const onSubmit = e => {
     e.preventDefault();
     contactContext.addContact(contact);
-    console.log(contact);
     setContact({
       name: '',
       email: '',
