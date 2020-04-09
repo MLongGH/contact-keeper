@@ -6,6 +6,8 @@ const Contacts = () => {
   const contactContext = useContext(ContactContext);
 
   const {contacts} = contactContext;
+  console.log('this is contacts');
+  console.log(contacts);
 
   return (
     <Fragment>
