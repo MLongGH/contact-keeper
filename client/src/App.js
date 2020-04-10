@@ -5,11 +5,14 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 
 import ContactState from './context/contact/ContactState';
+import AuthState from './context/auth/AuthState';
+
 import './App.css';
 
 const App = () => {
   return (
-    <ContactState>
+    <AuthState>
+      <ContactState>
       <Router>
         <Fragment className='App'>
           <NavBar />
@@ -22,6 +25,7 @@ const App = () => {
         </Fragment>
       </Router>
     </ContactState>
+    </AuthState>
   );
 }
 
