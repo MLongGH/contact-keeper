@@ -4,7 +4,8 @@ import {
   USER_LOADED,
   AUTH_ERROR,LOGIN_SUCCESS,
   LOGIN_FAIL,
-  LOGOUT,CLEAR_FILTER, CLEAR_ERRORS
+  LOGOUT,
+  CLEAR_ERRORS
 } from '../types';
 
 export default (state, action) => {
