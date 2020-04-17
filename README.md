@@ -3,4 +3,4 @@
 In the project directory, you can run:
 
 ### `npm start dev`
-Start the clent and server
+Start the client and the server
